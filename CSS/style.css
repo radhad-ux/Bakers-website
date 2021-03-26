@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title-text{
+    font-size: 40px;
+    text-align: center;
+}
+body{
+    font-family: 'Baloo Chettan 2', cursive;
+    line-height: 1.5;
+}
+:root{  
+/* Spaces */
+--space-small: 8px;
+--space-medium: 16px;
+--space-big: 24px;
+--space-extra-big: 48px;
+}
+.mainmenu{
+    text-align: center;
+}
+
+.mainmenu a{
+    padding: var(--space-small);
+    color: darkmagenta;
+}
+
+.mainmenu a:hover {
+    background-color: darkmagenta;
+    color: white;
+} 
+
+
+/*header*/
+.header{
+/* display: flex;*/
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+    url(../images/mainpageimg.jpg)center/cover no-repeat fixed;
+    /* flex-direction: column;*/
+    margin-top: auto; 
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 70%;
+}
+.hero .title{
+    color: #fff;
+    font-size: 50px;
+    
+}
+.hero .sub-title{
+    color: #fff;
+    font-size: 35px;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: darkgreen;
+    color: white;
+    cursor: pointer;
+    border: 2px solid darkgreen;
+    margin-top: 10px;
+}
+.hero-button:hover{
+    background:white;
+    color: darkgreen;
+    border: none;
+}
+/* End of header*/
+/*==========Social Icons====*/
+.footer{
+    background:#000;
+}
+#social-icons{
+ height: 150px;
+   background:#fff;
+    text-align: center;
+   /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);*/
+    padding: 50px 0 50px 0;
+}
+#social-icons a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 40px;
+    border-radius:5px;
+    transition: transform 2s ease, color 2s ease;
+}
+#social-icons a:hover{
+    transform: translateY(-20px);
+}
+.facebook{
+    color: #3b5998;
+}
+.twitter{
+  color:  #38A1F3;
+}
+.instagram{
+ color:   #e1306c;
+}
+.plus{
+    color:#db4a39;
+}
+/*====end of Social Icons======*/
